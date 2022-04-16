@@ -13,7 +13,6 @@ import lombok.Setter;
 public class LikesDto {
 
     private Long postId;
-    private Long username;
 
 }
 
