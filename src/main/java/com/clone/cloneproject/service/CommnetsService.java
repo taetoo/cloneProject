@@ -25,7 +25,6 @@ public class CommnetsService {
 
 
     //등록
-    //등록
     @Transactional
     public Comments postComment(Long id,CommentsRequestDto commentsRequestDto, @AuthenticationPrincipal User user) throws Exception {
 
@@ -34,11 +33,11 @@ public class CommnetsService {
                 ()-> new IllegalArgumentException("댓글이 존재하지않습니다.")
         );
 
-
         Comments comments = Comments.builder()
                 .id(commentsRequestDto.getId())
                 .contents(commentsRequestDto.getContents())
                 .posts(post)
+                .username(user.getUsername())
                 .build();
 
         return commentsRepository.save(comments);
