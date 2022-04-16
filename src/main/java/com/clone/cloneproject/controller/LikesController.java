@@ -1,7 +1,6 @@
 package com.clone.cloneproject.controller;
 
 import com.clone.cloneproject.config.UserDetailsImpl;
-import com.clone.cloneproject.dto.LikesDto;
 import com.clone.cloneproject.service.LikesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
