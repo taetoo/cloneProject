@@ -25,8 +25,8 @@ public class CommentsController {
 
     //등록
     @PostMapping("/comments/{commentid}")
-    public Comments getComments(@PathVariable Long commentid,@RequestBody CommentsRequestDto requestDto, @AuthenticationPrincipal User user) throws Exception {
-        return commnetsService.postComment(commentid,requestDto,user);
+    public Comments getComments(@PathVariable Long commentid,@RequestBody CommentsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetail) {
+        return commnetsService.postComment(commentid,requestDto,userDetail);
     }
 
 
