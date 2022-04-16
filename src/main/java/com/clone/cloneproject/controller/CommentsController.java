@@ -22,9 +22,9 @@ public class CommentsController {
     }
 
     //등록
-    @PostMapping("/comments/{commentid}")
-    public Comments getComments(@PathVariable Long commentid,@RequestBody CommentsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetail) {
-        return commnetsService.postComment(commentid,requestDto,userDetail);
+    @PostMapping("/comments/{postid}")
+    public Comments getComments(@PathVariable Long postid,@RequestBody CommentsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetail) {
+        return commnetsService.postComment(postid,requestDto,userDetail);
     }
 
 

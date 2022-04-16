@@ -8,6 +8,7 @@ import com.clone.cloneproject.repository.LikesRepository;
 import com.clone.cloneproject.repository.PostsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -26,6 +27,7 @@ public class LikesService {
     }
 
     //좋아요
+    @Transactional
     public boolean likePost(Long postId, UserDetailsImpl userDetails) {
 
 
@@ -42,11 +44,13 @@ public class LikesService {
         if(click.isPresent()){
             //좋아요 취소
             likesRepository.deleteLikesByUser(user);
+            postsRepository.downlikeCount(post.getId());
             return false;
         } else{
             //좋아요 하기
             Likes likes = new Likes(post,user);
             likesRepository.save(likes);
+            postsRepository.uplikeCount(post.getId());
             return true;
         }
 
