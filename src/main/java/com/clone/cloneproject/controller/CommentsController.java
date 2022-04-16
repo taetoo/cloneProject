@@ -4,12 +4,11 @@ package com.clone.cloneproject.controller;
 import com.clone.cloneproject.config.UserDetailsImpl;
 import com.clone.cloneproject.domain.Comments;
 import com.clone.cloneproject.dto.CommentsRequestDto;
-import com.clone.cloneproject.repository.CommentsRepository;
 import com.clone.cloneproject.service.CommnetsService;
-import lombok.Getter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/api")
@@ -17,8 +16,7 @@ public class CommentsController {
 
     private final CommnetsService commnetsService;
 
-
-
+    @Autowired
     public CommentsController( CommnetsService commnetsService) {
         this.commnetsService = commnetsService;
     }

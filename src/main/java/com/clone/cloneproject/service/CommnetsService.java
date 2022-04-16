@@ -7,13 +7,12 @@ import com.clone.cloneproject.domain.Posts;
 import com.clone.cloneproject.dto.CommentsRequestDto;
 import com.clone.cloneproject.repository.CommentsRepository;
 import com.clone.cloneproject.repository.PostsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.List;
+
 
 
 @Service
@@ -21,6 +20,7 @@ public class CommnetsService {
     private final CommentsRepository commentsRepository;
     private final PostsRepository postsRepository;
 
+    @Autowired
     public CommnetsService(CommentsRepository commentsRepository, PostsRepository postsRepository) {
         this.commentsRepository = commentsRepository;
         this.postsRepository = postsRepository;
