@@ -17,11 +17,14 @@ public class WebConfig implements WebMvcConfigurer {
 
     private final ObjectMapper objectMapper;
 
-    @Override
+    @Override // addCorsMappings 메서드를 제정의한다.
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000", "http://3.35.27.159:8080") //CORS url
+                // CORS를 적용할 URL 패턴을 정의
+                .allowedOrigins("http://localhost:3000", "http://3.35.27.159:8080")
+                //자원공유를 허락할 Origin 지정
                 .allowedMethods("POST", "GET", "PUT", "DELETE", "HEAD", "OPTIONS")
+                //허용할 HTTP 메서드를 지정
                 .allowCredentials(true);
     }
 
