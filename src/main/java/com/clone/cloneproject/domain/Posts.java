@@ -27,6 +27,9 @@ public class Posts extends Timestamped {
     @Column(columnDefinition = "TEXT")
     private String imgUrl;
 
+    @Column
+    private int likeCount;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
@@ -38,6 +41,8 @@ public class Posts extends Timestamped {
     @JsonIgnoreProperties({"posts"})
     @OneToMany(mappedBy = "posts")
     private List<Likes> likesList;
+
+
 
     // 게시물 새성 생성자
     public Posts(PostsRequestDto requestDto, User user) {
