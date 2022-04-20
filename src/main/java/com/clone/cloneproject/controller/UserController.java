@@ -20,7 +20,7 @@ import java.util.Map;
 @RestController
 public class UserController {
 
-    private final UserService userService;
+ private final UserService userService;
     private final JwtTokenProvider jwtTokenProvider;
 
 
@@ -59,10 +59,6 @@ public class UserController {
 
 
         return response;
-
-    }
-
-
 
 
 
