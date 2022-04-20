@@ -14,16 +14,15 @@ public class CommentsController {
 
     private final CommnetsService commnetsService;
 
-
-
+    @Autowired
     public CommentsController( CommnetsService commnetsService) {
         this.commnetsService = commnetsService;
     }
 
     //등록
-    @PostMapping("/comments/{commentid}")
-    public Comments getComments(@PathVariable Long commentid,@RequestBody CommentsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetail) {
-        return commnetsService.postComment(commentid,requestDto,userDetail);
+    @PostMapping("/comments/{postid}")
+    public Comments getComments(@PathVariable Long postid,@RequestBody CommentsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetail) {
+        return commnetsService.postComment(postid,requestDto,userDetail);
     }
 
 
@@ -38,6 +37,7 @@ public class CommentsController {
     public void deleteComment(@PathVariable Long commentid){
         commnetsService.deleteComments(commentid);
     }
+
 
 
 
