@@ -4,11 +4,8 @@ package com.clone.cloneproject.controller;
 import com.clone.cloneproject.config.UserDetailsImpl;
 import com.clone.cloneproject.domain.Comments;
 import com.clone.cloneproject.dto.CommentsRequestDto;
-import com.clone.cloneproject.repository.CommentsRepository;
-import com.clone.cloneproject.service.CommnetsService;
-import lombok.Getter;
+import com.clone.cloneproject.repository.service.CommnetsService;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

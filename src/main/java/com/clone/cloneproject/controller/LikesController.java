@@ -1,8 +1,7 @@
 package com.clone.cloneproject.controller;
 
 import com.clone.cloneproject.config.UserDetailsImpl;
-import com.clone.cloneproject.dto.LikesDto;
-import com.clone.cloneproject.service.LikesService;
+import com.clone.cloneproject.repository.service.LikesService;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.clone.cloneproject.service;
+package com.clone.cloneproject.repository.service;
 
 
 import com.clone.cloneproject.config.UserDetailsImpl;

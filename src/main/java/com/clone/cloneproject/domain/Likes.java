@@ -27,5 +27,6 @@ public class Likes {
     private User user;
 
 
-
+    public Likes(Posts post, User user) {
+    }
 }
