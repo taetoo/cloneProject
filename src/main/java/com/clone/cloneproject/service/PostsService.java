@@ -38,12 +38,11 @@ public class PostsService {
     }
     // 게시물 수정
     @Transactional
-    public Long update(Long postId, PostsRequestDto requestDto){
+    public void update(Long postId, PostsRequestDto requestDto){
         Posts posts = postsRepository.findById(postId).orElseThrow(
                 () -> new IllegalArgumentException("해당하는 게시물이 없습니다.")
         );
         posts.update(requestDto);
-        return posts.getId();
     }
     // 게시글 삭제
     public Long deleteContent(Long postId){

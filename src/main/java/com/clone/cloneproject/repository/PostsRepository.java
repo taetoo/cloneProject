@@ -17,12 +17,13 @@ public interface PostsRepository extends JpaRepository<Posts,Long> {
     @Modifying
     @Query("update Posts m set m.likeCount = m.likeCount+1 where m.id = :id")
     int uplikeCount(Long id);
+    //해당 아이디의 카운터를 1 업,
 
     @Transactional
     @Modifying
     @Query("update Posts m set m.likeCount = m.likeCount-1 where m.id = :id")
     int downlikeCount(Long id);
-
+    //해당 아이디의 카운터를 1 다운.,
 
 }
 //

@@ -25,7 +25,8 @@ public class PostsController {
 
     // 게시물 생성
     @PostMapping("/api/posts/write")
-    public Posts postContents(@RequestPart PostsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetails, @RequestPart MultipartFile file){
+    public Posts postContents(@RequestPart PostsRequestDto requestDto,
+                              @AuthenticationPrincipal UserDetailsImpl userDetails, @RequestPart MultipartFile file){
 
         String username = userDetails.getUsername();
         String imgPath = s3Service.upload(file);
@@ -43,8 +44,10 @@ public class PostsController {
 
     // 게시글 수정
     @PutMapping("/api/posts/modify/{postId}")
-    public Long updateContents(@PathVariable Long postId, @RequestPart PostsRequestDto requestDto, @RequestPart MultipartFile file){
-        String imgPath = s3Service.upload(file,requestDto.getImgUrl());
+    public Long updateContents(@PathVariable Long postId,
+                               @RequestPart PostsRequestDto requestDto, @RequestPart MultipartFile file){
+
+        String imgPath = s3Service.upload(file);
         requestDto.setImgUrl(imgPath);
         postsService.update(postId, requestDto);
 
