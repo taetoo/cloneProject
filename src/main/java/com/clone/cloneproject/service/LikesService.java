@@ -43,7 +43,7 @@ public class LikesService {
 
         if(click.isPresent()){
             //좋아요 취소
-            likesRepository.deleteLikesByUser(user);
+            likesRepository.deleteLikesByUser(click.get().getUser());
             postsRepository.downlikeCount(post.getId());
             return false;
         } else{
