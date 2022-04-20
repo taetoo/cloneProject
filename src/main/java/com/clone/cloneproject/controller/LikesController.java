@@ -13,16 +13,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class LikesController {
     private final LikesService likesService;
 
+ 
+    @Autowired
     public LikesController(LikesService likesService) {
         this.likesService = likesService;
     }
 
     @PostMapping("/{postId}/like")
     public boolean clickLike (@PathVariable Long postId,@AuthenticationPrincipal UserDetailsImpl userDetail){
-        boolean isLike = likesService.likePost(postId,userDetail);
-        return  isLike;
-    }
 
+        return likesService.likePost(postId,userDetail);
+    }
 
 
 }
