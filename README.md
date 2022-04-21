@@ -131,6 +131,26 @@
 
 
 # 🧑🏻‍🔧 Trouble Shooting
+<details>
+<summary><span style="color:red">좋아요 취소 문제</span></summary>
+<div markdown="1">
+</br>
+* findTrouble
+</br>
+하나의 게시물에 좋아요를 취소하면, 내가 클릭한 모든 좋아요 기록 삭제
+</br>
+<img width="636" alt="스크린샷 2022-04-21 오전 10 34 34" src="https://user-images.githubusercontent.com/101050600/164354297-3cafdf08-d0b4-472b-aa6b-8745ece59700.png">
+</br>
+</br>
+* fix
+</br>
+특정 게시물의 로그인한 유저의 좋아요 정보만 삭제됬어야했는데 , 현재 게시글 정보를 전달하지 않아서 해당 유저가 좋아요한 모든 게시글의 좋아요 정보가 전부 삭제되는 문제
+</br>
+<img width="686" alt="스크린샷 2022-04-21 오전 10 31 10" src="https://user-images.githubusercontent.com/101050600/164354270-7237075f-21c3-480a-964f-40aa7d8d04fc.png">
+</details>
+
+
+
 
 
 
