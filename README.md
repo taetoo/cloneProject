@@ -2,13 +2,25 @@
 - 팀 노션: [https://www.notion.so/7-SA-2fae9f8b335f4a8cbccbc4245daa91c3](https://www.notion.so/Week-07-Clone-Instagram-5-cdcce94f9ee7454b91172093e4109004)
 - FE Github: [https://github.com/INSTAFIVE99/FE](https://github.com/INSTAFIVE99/FE)
 - BE Github: [https://github.com/kwongyumin/cloneProject](https://github.com/kwongyumin/cloneProject)
+</br>
+
 - ---
 
 # 🏆 Goal
+</br>
 글로벌 기업 META 의 핵심 서비스인 Instagram 을 클론 코딩하여, 실제 서비스에서 어떤 기능이 구현되어 있는지 살펴보고, 새로운 기능들을 구현하는 동시에 현업에서 백엔드 개발자가 어떤 능력을 필요로 하는지 알아보자!</br>
 <div align="center">실전 프로젝트 전 마지막 스텝을 잘 밟는 것이 우리의 최종 목표 !! 🧗🏻</div>
+</br>
+</br>
 
 - ---
+
+# 📺 구현 영상
+
+[![IU(아이유) _ Into the I-LAND](http://img.youtube.com/vi/QYNwbZHmh8g/0.jpg)](https://youtu.be/QYNwbZHmh8g?t=0s) 
+
+- ---
+
 
 # 🧑🏻‍🎨 Wire Frame
 <details>
@@ -51,22 +63,18 @@
 <img width="963" alt="6" src="https://user-images.githubusercontent.com/101050600/164272157-68e653a3-8223-43f4-b496-8095f00862fc.png">
 </br>
 </details>
-
-
+</br>
+</br>
+</br>
+</br>
 
 - ---
-
-
 
 # 🩻 ERD
 </br>
 <img width="963" alt="6" src="https://user-images.githubusercontent.com/101050600/164274293-804bdec5-8e89-4b37-86b7-aa0f0a2c0916.png">
 
-
-
 - ---
-
-
 
 # 🧾 API 명세서
 <details>
@@ -78,25 +86,20 @@
 <img width="964" alt="3" src="https://user-images.githubusercontent.com/101050600/164267677-879badee-344a-4c01-a823-4d6c2526d4fd.png">
 </div><img width="966" alt="4" src="https://user-images.githubusercontent.com/101050600/164267672-fb22c691-0ce0-4e9d-9cc5-19611db5cad2.png">
 </details>
-
-
-
+</br>
+</br>
+</br>
+</br>
 
 - ---
-
-
 
 # 🧑🏻‍💻 Roles & Responsibilities
 - 권규민 : JWT 를 이용한 회원가입, 로그인 구현 및 BE 전반적인 SUPPORT
 - 권윤주 : 댓글 작성, 삭제, 수정, 좋아요 기능 구현
 - 김태현 : 게시글 작성(s3 사용 이미지 업로드), 삭제, 수정 구현
 
-
-
-
-
-
 - ---
+
 # 💻 Technologies Used
 
 ## **Back-end**
@@ -122,12 +125,7 @@
 - ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 
-
-
 ---
-
-
-
 
 # 🧑🏻‍🔧 Trouble Shooting
 <details>
@@ -173,10 +171,5 @@
 </br>
 <img width="687" alt="스크린샷 2022-04-21 오후 12 01 59" src="https://user-images.githubusercontent.com/101050600/164364382-3c6828de-c93a-4437-a0e9-b8a5dcf6a48f.png">
 </details>
-
-
-
-
-
 
 - ---
