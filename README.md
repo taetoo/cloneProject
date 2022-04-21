@@ -17,7 +17,7 @@
 
 # 📺 구현 영상
 
-[![항해99 인스타그램 클론 코딩_6기 5조 0-3 screenshot](https://user-images.githubusercontent.com/101050600/164424284-7e3e2c54-f693-45a9-a554-ff310bf8d39f.png)](https://www.youtube.com/watch?v=BmfaBBLQis0)
+[![유튜브 링크](http://img.youtube.com/vi/BmfaBBLQis0/0.jpg)](https://www.youtube.com/watch?v=BmfaBBLQis0)
 
 - ---
 
