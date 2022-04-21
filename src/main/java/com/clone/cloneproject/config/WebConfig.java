@@ -21,7 +21,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 // CORS를 적용할 URL 패턴을 정의
-                .allowedOrigins("http://localhost:3000", "http://3.35.27.159:8080")
+                .allowedOrigins("http://localhost:3000", "http://3.35.27.159:8080","http://seora-pj.shop.s3-website.ap-northeast-2.amazonaws.com","http://seora-pj.shop.s3-website.ap-northeast-2.amazonaws.com/")
                 //자원공유를 허락할 Origin 지정
                 .allowedMethods("POST", "GET", "PUT", "DELETE", "HEAD", "OPTIONS")
                 //허용할 HTTP 메서드를 지정

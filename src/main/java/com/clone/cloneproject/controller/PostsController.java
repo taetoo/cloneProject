@@ -39,6 +39,9 @@ public class PostsController {
     // myPage 게시물 조회
     @GetMapping("/api/posts/{postId}")
     public Posts showMyContents(@PathVariable Long postId){
+
+
+
         return postsService.showMyContents(postId);
     }
 
