@@ -173,4 +173,25 @@
 <img width="687" alt="스크린샷 2022-04-21 오후 12 01 59" src="https://user-images.githubusercontent.com/101050600/164364382-3c6828de-c93a-4437-a0e9-b8a5dcf6a48f.png">
 </details>
 
-- ---
+<details>
+<summary><span style="color:red"> 이모지 잭슨 파싱 오류 예외 처리 </span></summary>
+<div markdown="1">
+</br>
+* findTrouble
+</br>
+</br>
+게시물(String 타입의 contents 필드)에 이모지가 있을 경우, 필드에 빈값을 허용하게 되서 예외가 발생
+</br>
+</br>
+<img width="807" alt="스크린샷 2022-04-21 오후 4 06 53" src="https://user-images.githubusercontent.com/101050600/164428204-31d22568-23f2-4439-b8ed-4c9e33417433.png">
+</br>
+</br>
+* fix
+</br>
+</br>
+config 패키지에 Xss Filter를 처리하는 클래스에서 emoji jackson parse 오류에 따른 예외 처리 부분 추가
+</br>
+</br>
+<img width="807" alt="스크린샷 2022-04-21 오후 4 06 53" src="https://user-images.githubusercontent.com/101050600/164428553-551348f8-fe45-49de-b590-6b6faa76458c.png">
+</br>
+</details>
