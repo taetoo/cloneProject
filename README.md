@@ -99,7 +99,7 @@
 - ---
 # 💻 Technologies Used
 
-**Back-end**
+## **Back-end**
 
 - Java 8
 - SpringBoot 2.5.3
@@ -110,14 +110,14 @@
 - JWT
 - CORS
 
-**DevOps**
+## **DevOps**
 
 - AWS EC2
 - AWS RDS(MySQL)
-- AWS s3
+- AWS S3
 - FileZilla
 
-**Tool**
+## **Tool**
 
 - Git
 - GitHub
