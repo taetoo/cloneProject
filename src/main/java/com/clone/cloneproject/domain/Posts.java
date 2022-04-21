@@ -35,11 +35,11 @@ public class Posts extends Timestamped {
     private User user;
 
     @JsonIgnoreProperties({"posts"})
-    @OneToMany(mappedBy = "posts", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "posts", cascade = CascadeType.REMOVE)
     private List<Comments> commentsList;
 
     @JsonIgnoreProperties({"posts"})
-    @OneToMany(mappedBy = "posts")
+    @OneToMany(mappedBy = "posts", cascade = CascadeType.ALL)
     private List<Likes> likesList;
 
 
