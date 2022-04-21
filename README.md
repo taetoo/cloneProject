@@ -132,21 +132,47 @@
 
 # 🧑🏻‍🔧 Trouble Shooting
 <details>
-<summary><span style="color:red">좋아요 취소 문제</span></summary>
+<summary><span style="color:red"> 좋아요 취소 문제 </span></summary>
 <div markdown="1">
 </br>
 * findTrouble
 </br>
+</br>
 하나의 게시물에 좋아요를 취소하면, 내가 클릭한 모든 좋아요 기록 삭제
+</br>
 </br>
 <img width="636" alt="스크린샷 2022-04-21 오전 10 34 34" src="https://user-images.githubusercontent.com/101050600/164354297-3cafdf08-d0b4-472b-aa6b-8745ece59700.png">
 </br>
 </br>
 * fix
 </br>
+</br>
 특정 게시물의 로그인한 유저의 좋아요 정보만 삭제됬어야했는데 , 현재 게시글 정보를 전달하지 않아서 해당 유저가 좋아요한 모든 게시글의 좋아요 정보가 전부 삭제되는 문제
 </br>
+</br>
 <img width="686" alt="스크린샷 2022-04-21 오전 10 31 10" src="https://user-images.githubusercontent.com/101050600/164354270-7237075f-21c3-480a-964f-40aa7d8d04fc.png">
+</details>
+
+<details>
+<summary><span style="color:red"> 게시글 삭제 안되는 문제(엔티티 영속성 전이) </span></summary>
+<div markdown="1">
+</br>
+* findTrouble
+</br>
+</br>
+좋아요가 되어 있을 경우 게시글 삭제가 안되는 문제가 발생. 아마도 Posts, Likes 엔티티의 연관관계에서 영속성 전이 문제라고 의심
+</br>
+</br>
+<img width="969" alt="스크린샷 2022-04-21 오전 11 07 59" src="https://user-images.githubusercontent.com/101050600/164363641-276cee52-65a0-4fe0-a02c-cb3344acc425.png">
+</br>
+</br>
+* fix
+</br>
+</br>
+참조무결성 제약 조건 때문에 게시글에 좋아요 데이터가 존재할 시, 게시글이 삭제가 안됐다. 👉 cascade 옵션으로 해결
+</br>
+</br>
+<img width="687" alt="스크린샷 2022-04-21 오후 12 01 59" src="https://user-images.githubusercontent.com/101050600/164364382-3c6828de-c93a-4437-a0e9-b8a5dcf6a48f.png">
 </details>
 
 
