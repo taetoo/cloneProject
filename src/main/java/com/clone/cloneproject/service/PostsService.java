@@ -35,6 +35,7 @@ public class PostsService {
     public Posts showMyContents(Long postId) {
         return postsRepository.findById(postId)
                 .orElseThrow(()-> new IllegalArgumentException("게시물이 존재하지 않습니다."));
+
     }
     // 게시물 수정
     @Transactional
